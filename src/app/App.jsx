@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Dashboard from "../pages/Dashboard";
-import Appointments from "../pages/Appointments";
-import Patients from "../pages/Patients";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Appointments from "../pages/Appointments/Appointments";
+import Patients from "../pages/Patients/Patients";
 import Layout from "../components/Layout";
 
 function App() {
