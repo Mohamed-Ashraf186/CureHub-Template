@@ -13,7 +13,7 @@ function Layout() {
       <Sidebar />
       <div className="flex-1 flex flex-col ">
         <Header />
-        <Main className="flex-1 p-4 ">
+        <Main className="flex-1 p-7.5 ">
           <Outlet />
         </Main>
       </div>

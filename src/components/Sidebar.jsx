@@ -3,7 +3,7 @@ import styled from "styled-components";
 import NavIcon from "./NavIcon";
 
 const Aside = styled.aside`
-  flex-basis: 18.9%;
+  flex-basis: 18%;
   padding: 1.5em 0em;
   display: flex;
   flex-direction: column;
