@@ -29,6 +29,13 @@ const Container = styled.div`
     @media (min-width: 1700px) {
       left: 8%;
     }
+    @media (min-width: 1920px) {
+      left: 7%;
+    }
+
+    @media (min-width: 2200px) {
+      left: 6%;
+    }
 
     @media (max-width: 1200px) {
       display: none;
@@ -38,6 +45,13 @@ const Container = styled.div`
   .checkpoint-ball {
     @media (max-width: 1200px) {
       display: none;
+    }
+
+    @media (min-width: 1700px) {
+      left: 4.5%;
+    }
+    @media (min-width: 2200px) {
+      left: 3.9%;
     }
   }
 `;
@@ -69,8 +83,8 @@ function AddAppointmentList() {
               <div className="text-lg font-semibold font-primary">23</div>
               <div className="text-xs text-[#999a9d] font-primary">MON</div>
             </div>
-            <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%]">
-              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 checkpoint-ball"></div>
+            <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%] checkpoint-ball">
+              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 "></div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
               <div className="flex justify-between flex-wrap gap-4">
@@ -127,7 +141,7 @@ function AddAppointmentList() {
               <div className="text-lg font-semibold">19</div>
               <div className="text-xs text-[#999a9d]">THU</div>
             </div>
-            <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%] ">
+            <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%] checkpoint-ball">
               <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 checkpoint-ball"></div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
