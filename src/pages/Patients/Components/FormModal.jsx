@@ -32,8 +32,7 @@ import React from "react";
 function FormModal({ onClose }) {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    onClose(); // Close the modal after submission
+    onClose();
   };
 
   return (
@@ -133,7 +132,10 @@ function FormModal({ onClose }) {
 
         <div className="flex justify-between gap-4 mb-4 items-end">
           <div className="flex ">
-            <Button className="bg-[#00a8b5] font-primary h-11 hover:bg-[#00a8b5]/90 w-36">
+            <Button
+              onClick={handleSubmit}
+              className="bg-[#00a8b5] font-primary h-11 hover:bg-[#00a8b5]/90 w-36"
+            >
               Save
             </Button>
           </div>

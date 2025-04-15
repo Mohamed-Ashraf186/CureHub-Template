@@ -1,5 +1,5 @@
 @import "tailwindcss";
-/* @import "tailwindcss/preflight"; */
+
 @import "tailwindcss/utilities";
 
 @custom-variant dark (&:is(.dark *));
@@ -10,10 +10,6 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -186,34 +182,32 @@
 
 
 .custom-scrollbar {
-  overflow: auto; /* Ensure overflow is set */
+  overflow: auto;
 }
 
-/* WebKit scrollbar styles */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px; /* Width of the scrollbar */
-  height: 65px; /* Height of the scrollbar for horizontal scrolling */
-  border-radius: 8px; /* Rounded corners for the scrollbar container */
+  width: 4px;
+  height: 65px; 
+  border-radius: 8px; 
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Background of the scrollbar track */
-  border-radius: 8px; /* Rounded corners for the track */
+  background: #f1f1f1; 
+  border-radius: 8px; 
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the scrollbar thumb */
-  border-radius: 8px; /* Rounded corners for the thumb */
+  background: #888; 
+  border-radius: 8px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color of the thumb on hover */
+  background: #555; 
 }
 
-/* Firefox scrollbar styles */
 .custom-scrollbar {
-  scrollbar-width: thin; /* Makes the scrollbar thinner */
-  scrollbar-color: #212529 #f1f1f1; /* Thumb color and track color */
+  scrollbar-width: thin; 
+  scrollbar-color: #212529 #f1f1f1;
 }
 
 .bg-custom-green{
@@ -231,7 +225,7 @@
 
 
 .translate-up {
-  transform: translateY(-10px);  /* Smooth transition */
+  transform: translateY(-10px);  
 }
 
 .font-secondary{

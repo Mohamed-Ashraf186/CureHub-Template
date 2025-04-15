@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Pagination from "../../../components/ui/PaginationComponent";
 import {
   Table,
@@ -8,8 +9,51 @@ import {
   TableHeader,
   TableRow,
 } from "../../../components/ui/table";
+import uniqueNamesData from "../data/names.json";
+
+const generateDate = (daysFromToday) => {
+  const date = new Date();
+  date.setDate(date.getDate() + daysFromToday);
+  return date.toISOString().split("T")[0];
+};
+
+const uniqueNames = uniqueNamesData.names;
+
+const appointmentsData = Array.from({ length: 60 }, (_, index) => ({
+  patientName: uniqueNames[index % uniqueNames.length],
+  gender: index % 2 === 0 ? "Female" : "Male",
+  department: `Department ${(index % 3) + 1}`,
+  doctor: `Doctor ${(index % 5) + 1}`,
+  time: `${(index % 12) + 1}:00 PM`,
+  date: generateDate(index),
+  status: index % 2 === 0 ? "Confirmed" : "Cancelled",
+}));
 
 function AppointmentsListTable() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const entriesPerPage = 10;
+
+  const indexOfLastEntry = currentPage * entriesPerPage;
+  const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
+  const currentEntries = appointmentsData.slice(
+    indexOfFirstEntry,
+    indexOfLastEntry
+  );
+
+  const totalPages = Math.ceil(appointmentsData.length / entriesPerPage);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   return (
     <>
       <Table>
@@ -39,52 +83,47 @@ function AppointmentsListTable() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {Array.from({ length: 10 }).map((_, index) => (
+          {currentEntries.map((entry, index) => (
             <TableRow className="" key={index}>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                Sarah Lawsson
+                {entry.patientName}
               </TableCell>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                Female
+                {entry.gender}
               </TableCell>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                GIT
+                {entry.department}
               </TableCell>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                John Albert
+                {entry.doctor}
               </TableCell>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                1:00 PM
+                {entry.time}
               </TableCell>
               <TableCell className="text-sm font-primary text-center py-[20.5px]">
-                Date
+                {entry.date}
               </TableCell>
-              <TableCell className="flex py-[20.5px] gap-7.5 justify-center">
-                {index % 2 === 0 ? (
-                  <>
-                    <div className="rounded-[33px] py-1.5 px-3.5 bg-green-100">
-                      <p className="font-primary text-xs text-[#29c36a]">
-                        Confirmed
-                      </p>
-                    </div>
-                    <img src="/menu-dots.svg" alt="menu-dots" />
-                  </>
-                ) : (
-                  <>
-                    <div className="rounded-[33px] py-1.5 px-3.5 bg-[#f7f7f7]">
-                      <p className="font-primary text-xs text-[#999a9d]">
-                        Confirmed
-                      </p>
-                    </div>
-                    <img src="/menu-dots.svg" alt="menu-dots" />
-                  </>
-                )}
+              <TableCell className="flex gap-7.5 justify-center py-[20.5px]">
+                <img
+                  src={
+                    entry.status === "Confirmed"
+                      ? "/green-check.svg"
+                      : "/red-cross.svg"
+                  }
+                  alt={entry.status}
+                />
               </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-      <Pagination />
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onNext={handleNextPage}
+        onPrev={handlePrevPage}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   );
 }

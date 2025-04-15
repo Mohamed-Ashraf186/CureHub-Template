@@ -17,7 +17,6 @@ function Dashboard() {
   return (
     <DashboardEl>
       <StatsSummaryList />
-
       <div className="flex gap-6 justify-between mt-6 flex-container">
         <div className="flex flex-col basis-[57.4%]">
           <AppointmentChart />

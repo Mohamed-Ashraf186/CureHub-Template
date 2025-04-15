@@ -40,7 +40,7 @@ function FileModal({ onClose }) {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-lg shadow-lg max-w-2xl p-6 relative w-[425px] h-[382px]"
+        className="bg-white rounded-lg shadow-lg max-w-2xl p-6 relative w-[425px] "
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between mb-6">
@@ -75,6 +75,19 @@ function FileModal({ onClose }) {
             className="text-[#00a8b5] font-medium text-sm p-0 h-auto font-primary"
           >
             Clicking here
+          </Button>
+        </div>
+
+        <div className="flex justify-end gap-2 mt-6">
+          <Button
+            onClick={onClose}
+            className=" font-primary border border-[#00a8b5] bg-white text-primary h-8.5 hover:bg-gray-100 rounded-sm"
+          >
+            Cancel
+          </Button>
+
+          <Button className="bg-[#00a8b5] font-primary  h-8.5 hover:bg-[#00a8b5]/90 rounded-sm">
+            Upload File
           </Button>
         </div>
       </div>

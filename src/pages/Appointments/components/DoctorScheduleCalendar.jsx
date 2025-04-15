@@ -18,7 +18,6 @@ export default function DoctorScheduleCalendar() {
   const miniCalendarRef = useRef(null);
   const calendarButtonRef = useRef(null);
 
-  // Close mini-calendar when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -37,7 +36,6 @@ export default function DoctorScheduleCalendar() {
     };
   }, []);
 
-  // Appointment data structure
   const appointments = [
     {
       day: "Sunday",
@@ -129,7 +127,6 @@ export default function DoctorScheduleCalendar() {
     },
   ];
 
-  // Days of the week
   const days = [
     "Sunday",
     "Monday",
@@ -141,7 +138,6 @@ export default function DoctorScheduleCalendar() {
   ];
   const dayAbbreviations = ["Sa", "Su", "Mo", "Tu", "We", "Th", "Fr"];
 
-  // Time slots (simplified for this example)
   const timeSlots = [
     "10:00-12:00 PM",
     "1:00-3:00 PM",
@@ -153,27 +149,21 @@ export default function DoctorScheduleCalendar() {
     "10:00-12:00 AM",
   ];
 
-  // Function to get appointments for a specific day and time
   const getAppointment = (day, time) => {
     return appointments.find((app) => app.day === day && app.time === time);
   };
 
-  // Calendar data structure for November 2024
-  // This is a simplified version - in a real app, you'd calculate this dynamically
   const calendarData = [
-    [null, null, null, null, 1, 2, 3], // First week (starting with empty cells)
-    [4, 5, 6, 7, 8, 9, 10], // Second week
-    [11, 12, 13, 14, 15, 16, 17], // Third week
-    [18, 19, 20, 21, 22, 23, 24], // Fourth week
-    [25, 26, 27, 28, 29, 30, 31], // Fifth week
+    [null, null, null, null, 1, 2, 3],
+    [4, 5, 6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15, 16, 17],
+    [18, 19, 20, 21, 22, 23, 24],
+    [25, 26, 27, 28, 29, 30, 31],
   ];
 
-  // Dates with appointments (for highlighting)
-  // In this case, we're highlighting dates 1-25 as shown in the image
-  const highlightedRows = [0, 1, 2, 3]; // Rows to highlight (first 4 rows)
-  const highlightedDates = Array.from({ length: 25 }, (_, i) => i + 1); // Dates 1-25
+  const highlightedRows = [0, 1, 2, 3];
+  const highlightedDates = Array.from({ length: 25 }, (_, i) => i + 1);
 
-  // Toggle mini-calendar visibility
   const toggleMiniCalendar = () => {
     setShowMiniCalendar(!showMiniCalendar);
   };
@@ -217,9 +207,7 @@ export default function DoctorScheduleCalendar() {
 
               <div className="grid gap-2">
                 {calendarData.map((week, weekIndex) => {
-                  // For the first row, we need special handling to start highlighting from day 1
                   if (weekIndex === 0) {
-                    // Find the index of the first day (1) in the first week
                     const firstDayIndex = week.findIndex((day) => day === 1);
 
                     return (
@@ -254,10 +242,7 @@ export default function DoctorScheduleCalendar() {
                         ))}
                       </div>
                     );
-                  }
-
-                  // For rows 1-3, full row highlighting
-                  else if (highlightedRows.includes(weekIndex)) {
+                  } else if (highlightedRows.includes(weekIndex)) {
                     return (
                       <div
                         key={weekIndex}
@@ -281,10 +266,7 @@ export default function DoctorScheduleCalendar() {
                         ))}
                       </div>
                     );
-                  }
-
-                  // For the last row, no highlighting
-                  else {
+                  } else {
                     return (
                       <div
                         key={weekIndex}
