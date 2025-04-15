@@ -468,7 +468,7 @@ function Patients() {
                           John Albert
                         </div>
                       </div>
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-4 justify-end">
                         <span className="px-3.5 py-1.5 bg-custom-green text-[#29c36a] rounded-[33px] text-xs font-primary">
                           Confirmed
                         </span>
@@ -585,7 +585,7 @@ function Patients() {
                         </div>
                       </div>
                       <div className="flex items-center gap-4 justify-end">
-                        <div className="flex gap-2 grow justify-between">
+                        <div className="flex gap-[29px]  ">
                           <div className="w-8 h-8 rounded-full bg-[#d4f3e1] flex items-center justify-center text-[#29c36a]">
                             <svg
                               width="16"
@@ -650,10 +650,16 @@ function Patients() {
               <div className="mb-6 relative">
                 <div className="flex items-center">
                   <div className="mr-6 text-center opacity-0">
-                    <div className="text-lg font-semibold">19</div>
-                    <div className="text-xs text-[#999a9d]">THU</div>
+                    <div className="text-lg font-semibold font-primary ">
+                      23
+                    </div>
+                    <div className="text-xs text-[#999a9d] font-primary">
+                      MON
+                    </div>
                   </div>
-                  {/* <div className="absolute left-[9%] top-[46%] w-3 h-3 rounded-full bg-[#00a8b5] -ml-1.5 z-10"></div> */}
+                  <div className="absolute left-[8.1%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center 2xl:left-[5.5%] opacity-0">
+                    <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10"></div>
+                  </div>
                   <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
                     <div className="grid grid-cols-4 gap-4">
                       <div>
@@ -669,7 +675,7 @@ function Patients() {
                           Type
                         </div>
                         <div className="font-medium text-[15px]/6 text-basic font-primary">
-                          Follow-Up
+                          Examine
                         </div>
                       </div>
                       <div>
@@ -681,49 +687,9 @@ function Patients() {
                         </div>
                       </div>
                       <div className="flex items-center gap-4 justify-end">
-                        <div className="flex gap-2 grow justify-between">
-                          <div className="w-8 h-8 rounded-full bg-[#d4f3e1] flex items-center justify-center text-[#29c36a]">
-                            <svg
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M5 12L10 17L20 7"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </div>
-                          <div className="w-8 h-8 rounded-full bg-[#ffebeb] flex items-center justify-center text-[#ff0000]">
-                            <svg
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M18 6L6 18"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                              <path
-                                d="M6 6L18 18"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                          </div>
-                        </div>
+                        <span className="px-3.5 py-1.5 bg-custom-green text-[#29c36a] rounded-[33px] text-xs font-primary">
+                          Confirmed
+                        </span>
                         <button>
                           <svg
                             width="24"
@@ -779,7 +745,7 @@ function Patients() {
                         </div>
                       </div>
                       <div className="flex items-center gap-4 justify-end">
-                        <div className="flex gap-2 grow justify-between">
+                        <div className="flex gap-[29px]  ">
                           <div className="w-8 h-8 rounded-full bg-[#d4f3e1] flex items-center justify-center text-[#29c36a]">
                             <svg
                               width="16"
