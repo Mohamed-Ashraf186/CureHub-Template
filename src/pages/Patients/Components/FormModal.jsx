@@ -49,7 +49,7 @@ function FormModal({ onClose }) {
           <div className="flex-col">
             <div className="flex flex-col items-center mb-4">
               <div className="text-[#00a8b5]">
-                <img src="/public/curehub-logo.svg" alt="curehub-logo" />
+                <img src="/curehub-logo.svg" alt="curehub-logo" />
               </div>
               <h2 className="text-3xl font-bold">
                 <span className="text-primary text-5xl font-bold">Cure</span>
