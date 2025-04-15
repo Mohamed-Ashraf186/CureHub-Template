@@ -14,7 +14,7 @@ Styled Components is a library for styling React components using tagged templat
 
 Shadcn is a design system that provides a set of components and utilities for building user interfaces in React applications.
 
-### 5. TailWind Css
+### 5. TailWind CSS
 
 Tailwind CSS is a modern CSS framework that embraces a utility-first approach to styling like bootstrap.
 
