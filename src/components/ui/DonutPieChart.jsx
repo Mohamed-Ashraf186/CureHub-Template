@@ -292,7 +292,7 @@ export function DonutPieChart() {
                     return (
                       <g>
                         <image
-                          href="/src/assets/standing-human-body-silhouette.svg"
+                          href="/standing-human-body-silhouette.svg"
                           x={viewBox.cx - 48}
                           y={viewBox.cy - 48}
                           width="96"
@@ -320,10 +320,7 @@ export function DonutPieChart() {
         >
           <div className="flex gap-2 items-center">
             <div className="icon-wrapper flex items-center justify-center rounded-full bg-primary w-8 h-8">
-              <img
-                src="/src/assets/doctor-stethoscope-sm.svg"
-                alt="doctor-stethoscope"
-              />
+              <img src="/doctor-stethoscope-sm.svg" alt="doctor-stethoscope" />
             </div>
             <div className="flex flex-col">
               <p className="font-primary text-sm text-basic">
@@ -333,7 +330,7 @@ export function DonutPieChart() {
             </div>
           </div>
           <div>
-            <img src="/src/assets/chevron-left.svg" alt="chevron-left" />
+            <img src="/chevron-left.svg" alt="chevron-left" />
           </div>
         </div>
 
@@ -375,7 +372,7 @@ export function DonutPieChart() {
             </div>
           </div>
           <div>
-            <img src="/src/assets/chevron-left.svg" alt="chevron-left" />
+            <img src="/chevron-left.svg" alt="chevron-left" />
           </div>
         </div>
 
@@ -386,7 +383,7 @@ export function DonutPieChart() {
         >
           <div className="flex gap-2 items-center">
             <div className="icon-wrapper flex items-center justify-center rounded-full bg-[#76cad1] w-8 h-8">
-              <img src="/src/assets/Orthopedic.svg" alt="doctor-stethoscope" />
+              <img src="/Orthopedic.svg" alt="doctor-stethoscope" />
             </div>
             <div className="flex flex-col">
               <p className="font-primary text-sm text-basic">Orthopedic</p>
@@ -394,7 +391,7 @@ export function DonutPieChart() {
             </div>
           </div>
           <div>
-            <img src="/src/assets/chevron-left.svg" alt="chevron-left" />
+            <img src="/chevron-left.svg" alt="chevron-left" />
           </div>
         </div>
 
@@ -405,7 +402,7 @@ export function DonutPieChart() {
         >
           <div className="flex gap-2 items-center">
             <div className="icon-wrapper flex items-center justify-center rounded-full bg-[#F7912C] w-8 h-8">
-              <img src="/src/assets/Dentist.svg" alt="doctor-stethoscope" />
+              <img src="/Dentist.svg" alt="doctor-stethoscope" />
             </div>
             <div className="flex flex-col">
               <p className="font-primary text-sm text-basic">Dentist</p>
@@ -413,7 +410,7 @@ export function DonutPieChart() {
             </div>
           </div>
           <div>
-            <img src="/src/assets/chevron-left.svg" alt="chevron-left" />
+            <img src="/chevron-left.svg" alt="chevron-left" />
           </div>
         </div>
 
@@ -424,7 +421,7 @@ export function DonutPieChart() {
         >
           <div className="flex gap-2 items-center">
             <div className="icon-wrapper flex items-center justify-center rounded-full bg-[#FFCC00] w-8 h-8">
-              <img src="/src/assets/Cardiology.svg" alt="doctor-stethoscope" />
+              <img src="/Cardiology.svg" alt="doctor-stethoscope" />
             </div>
             <div className="flex flex-col">
               <p className="font-primary text-sm text-basic">Cardiology</p>
@@ -432,7 +429,7 @@ export function DonutPieChart() {
             </div>
           </div>
           <div>
-            <img src="/src/assets/chevron-left.svg" alt="chevron-left" />
+            <img src="/chevron-left.svg" alt="chevron-left" />
           </div>
         </div>
       </CardFooter>

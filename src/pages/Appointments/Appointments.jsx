@@ -46,15 +46,12 @@ function Appointments() {
             <SortButton className="flex gap-2 items-center font-primary">
               Sort by
               <div className="sort-wrapper">
-                <img src="/src/assets/sort.svg" alt="add-square" />
+                <img src="/sort.svg" alt="add-square" />
               </div>
             </SortButton>
             <AddButton className="flex gap-2 items-center text-white font-primary">
               <div className="plus-wrapper">
-                <img
-                  src="/src/assets/add-square-svgrepo-com 1.svg"
-                  alt="add-square"
-                />
+                <img src="/add-square-svgrepo-com 1.svg" alt="add-square" />
               </div>
               Add New
             </AddButton>

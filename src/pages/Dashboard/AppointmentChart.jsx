@@ -93,7 +93,7 @@ export default function AppointmentsByGender() {
           <DropdownButton className=" text-primary hover:bg-teal-50 flex items-center">
             Weekly
             <div className="arrow-wrapper">
-              <img src="/src/assets/arrow-teal.svg" alt="down-arrow-teal" />
+              <img src="/arrow-teal.svg" alt="down-arrow-teal" />
             </div>
           </DropdownButton>
         </div>

@@ -40,7 +40,7 @@ function Sidebar() {
     <Aside className="nav">
       <div className="logo flex justify-center items-center mx-auto">
         <div className="img-wrapper">
-          <img src="/public/curehub-logo.svg" alt="carehub logo" />
+          <img src="/curehub-logo.svg" alt="carehub logo" />
         </div>
         <div className="title">
           <span className="text-primary text-[2rem] font-bold">Cure</span>

@@ -69,7 +69,7 @@ function AppointmentsListTable() {
                         Confirmed
                       </p>
                     </div>
-                    <img src="/src/assets/menu-dots.svg" alt="menu-dots" />
+                    <img src="/menu-dots.svg" alt="menu-dots" />
                   </>
                 ) : (
                   <>
@@ -78,7 +78,7 @@ function AppointmentsListTable() {
                         Confirmed
                       </p>
                     </div>
-                    <img src="/src/assets/menu-dots.svg" alt="menu-dots" />
+                    <img src="/menu-dots.svg" alt="menu-dots" />
                   </>
                 )}
               </TableCell>

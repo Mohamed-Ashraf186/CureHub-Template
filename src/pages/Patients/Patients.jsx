@@ -75,7 +75,7 @@ function Patients() {
               <div className="rounded-left w-1/3 flex flex-col items-center p-6 bg-white">
                 <div className="w-22 h-22 rounded-full overflow-hidden mb-[9px]">
                   <img
-                    src="/src/assets/sarah-pic.svg"
+                    src="/sarah-pic.svg"
                     alt="Sarah Lawsson"
                     className="w-full h-full object-cover"
                   />

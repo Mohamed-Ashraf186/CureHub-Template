@@ -62,8 +62,8 @@ function AppointmentsRequestTable() {
                 Date
               </TableCell>
               <TableCell className="flex gap-7.5 justify-center py-[20.5px]">
-                <img src="/src/assets/green-check.svg" alt="green-check" />
-                <img src="/src/assets/red-cross.svg" alt="red-cross" />
+                <img src="/green-check.svg" alt="green-check" />
+                <img src="/red-cross.svg" alt="red-cross" />
               </TableCell>
             </TableRow>
           ))}

@@ -369,7 +369,7 @@ export default function DoctorScheduleCalendar() {
                       <div className="flex flex-col h-full">
                         <div className="flex items-start">
                           <div className="w-8 h-8 rounded-full bg-transparent border-[#999a9d]  flex items-center justify-center mr-2">
-                            <img src="/src/assets/doc-pfp.svg" alt="doc-pfp" />
+                            <img src="/doc-pfp.svg" alt="doc-pfp" />
                           </div>
                         </div>
                         <div className="mt-1">

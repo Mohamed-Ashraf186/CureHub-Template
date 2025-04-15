@@ -61,7 +61,7 @@ function DoctorSchedule() {
           <div className="doctors-activity mt-6 flex flex-col gap-2 h-[182px] overflow-auto ">
             <div className="doc-profile flex gap-2.5 items-center grow  ">
               <div className="pfp-wrapper">
-                <img src="/src/assets/doctor-pfp.png" alt="doctor pfp" />
+                <img src="/doctor-pfp.png" alt="doctor pfp" />
               </div>
 
               <div className="flex flex-col gap-1">
@@ -82,7 +82,7 @@ function DoctorSchedule() {
 
             <div className="doc-profile flex gap-2.5 items-center grow">
               <div className="pfp-wrapper">
-                <img src="/src/assets/doctor-pfp.png" alt="doctor pfp" />
+                <img src="/doctor-pfp.png" alt="doctor pfp" />
               </div>
 
               <div className="flex flex-col gap-1">
@@ -103,7 +103,7 @@ function DoctorSchedule() {
 
             <div className="doc-profile flex gap-2.5 items-center grow">
               <div className="pfp-wrapper">
-                <img src="/src/assets/doctor-pfp.png" alt="doctor pfp" />
+                <img src="/doctor-pfp.png" alt="doctor pfp" />
               </div>
 
               <div className="flex flex-col gap-1">
@@ -124,7 +124,7 @@ function DoctorSchedule() {
 
             <div className="doc-profile flex gap-2.5 items-center grow">
               <div className="pfp-wrapper">
-                <img src="/src/assets/doctor-pfp.png" alt="doctor pfp" />
+                <img src="/doctor-pfp.png" alt="doctor pfp" />
               </div>
 
               <div className="flex flex-col gap-1">
@@ -145,7 +145,7 @@ function DoctorSchedule() {
 
             <div className="doc-profile flex gap-2.5 items-center grow">
               <div className="pfp-wrapper">
-                <img src="/src/assets/doctor-pfp.png" alt="doctor pfp" />
+                <img src="/doctor-pfp.png" alt="doctor pfp" />
               </div>
 
               <div className="flex flex-col gap-1">
@@ -167,7 +167,7 @@ function DoctorSchedule() {
 
           <button className="flex items-center mx-auto mt-10 border px-3 py-1.5 gap-3.5 font-primary border-[#00A8B5] rounded-sm text-basic text-sm">
             <div className="add-square">
-              <img src="/src/assets/add-square.svg" alt="add-square" />
+              <img src="/add-square.svg" alt="add-square" />
             </div>
             Add New
           </button>

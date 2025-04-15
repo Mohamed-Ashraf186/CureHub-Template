@@ -51,10 +51,10 @@ function StatsSummaryList() {
     <SummaryList>
       <AppointmentSummaryCard onClick={handleCardClick}>
         <div className="bg-icon">
-          <img src="/src/assets/medical-cardio.svg" alt="Cardio icon" />
+          <img src="/medical-cardio.svg" alt="Cardio icon" />
         </div>
         <div className="card-icon-wrapper flex justify-center items-center w-[2em] h-[2em] rounded-full  bg-white">
-          <img src="/src/assets/people-icon.svg" alt="people icon" />
+          <img src="/people-icon.svg" alt="people icon" />
         </div>
         <p className="text-white">Total Appointments</p>
 
@@ -65,10 +65,7 @@ function StatsSummaryList() {
             <div className="text-[#0FDC67] text-xs flex items-center gap-0.5">
               <p>+ 32%</p>
               <div>
-                <img
-                  src="/src/assets/green-up-arrow.svg"
-                  alt="up-green-arrow"
-                />
+                <img src="/green-up-arrow.svg" alt="up-green-arrow" />
               </div>
             </div>
           </div>
@@ -77,7 +74,7 @@ function StatsSummaryList() {
 
       <SummaryCard>
         <div className="card-icon-wrapper flex justify-center items-center w-[2em] h-[2em] rounded-full bg-primary ">
-          <img src="/src/assets/new-user.svg" alt="people icon" />
+          <img src="/new-user.svg" alt="people icon" />
         </div>
         <p className="text-primary">New Patients</p>
 
@@ -88,10 +85,7 @@ function StatsSummaryList() {
             <div className="text-[#0FDC67] text-xs flex items-center gap-0.5 font-medium">
               <p>+ 20%</p>
               <div>
-                <img
-                  src="/src/assets/green-up-arrow.svg"
-                  alt="up-green-arrow"
-                />
+                <img src="/green-up-arrow.svg" alt="up-green-arrow" />
               </div>
             </div>
           </div>
@@ -100,10 +94,7 @@ function StatsSummaryList() {
 
       <SummaryCard>
         <div className="card-icon-wrapper flex justify-center items-center w-[2em] h-[2em] rounded-full bg-primary ">
-          <img
-            src="/src/assets/doctor-stethoscope.svg"
-            alt="doctor-stethoscope"
-          />
+          <img src="/doctor-stethoscope.svg" alt="doctor-stethoscope" />
         </div>
         <p className="text-primary">Total Doctors</p>
 
@@ -114,10 +105,7 @@ function StatsSummaryList() {
             <div className="text-[#D20013] text-xs flex items-center gap-0.5 font-medium">
               <p>+ 12%</p>
               <div>
-                <img
-                  src="/src/assets/arrow-down-red.svg"
-                  alt="arrow-down-red"
-                />
+                <img src="/arrow-down-red.svg" alt="arrow-down-red" />
               </div>
             </div>
           </div>
@@ -125,7 +113,7 @@ function StatsSummaryList() {
       </SummaryCard>
       <SummaryCard>
         <div className="card-icon-wrapper flex justify-center items-center w-[2em] h-[2em] rounded-full bg-primary ">
-          <img src="/src/assets/wrong-user.svg" alt="wrong-user" />
+          <img src="/wrong-user.svg" alt="wrong-user" />
         </div>
         <p className="text-primary">Canceled Appointments</p>
 
@@ -136,10 +124,7 @@ function StatsSummaryList() {
             <div className="text-[#D20013] text-xs flex items-center font-medium gap-0.5">
               <p>+ 12%</p>
               <div>
-                <img
-                  src="/src/assets/arrow-down-red.svg"
-                  alt="arrow-down-red"
-                />
+                <img src="/arrow-down-red.svg" alt="arrow-down-red" />
               </div>
             </div>
           </div>
