@@ -22,10 +22,29 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  .timeline {
+    @media (min-width: 1700px) {
+      left: 8%;
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .checkpoint-ball {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+`;
 
 function AddAppointmentList() {
   return (
-    <div className="col-span-2 bg-white rounded-lg  p-6">
+    <Container className="col-span-2 bg-white rounded-lg  p-6">
       <div className="flex items-center justify-between mb-6">
         <div className="flex px-1.5 py-[6.5px] space-x-4 rounded-sm bg-[#f6f8fa] border-b border-[#e0e0e0] ">
           <button className="px-4 py-2 text-[#00a8b5] bg-white rounded-sm">
@@ -42,7 +61,7 @@ function AddAppointmentList() {
       </div>
 
       <div className="relative bg-[#f7f7f7] max-h-[460px] custom-scrollbar  p-6">
-        <div className="absolute left-[8.8%] max-h-[331px]   top-[15%] bottom-0 w-0.5 bg-[#999a9d] xl:left-[11.8%] 2xl:left-[8.8%]"></div>
+        <div className="absolute left-[8.5%] max-h-[331px]   top-[15%] bottom-0 w-0.5 bg-[#999a9d] xl:left-[11.8%] 2xl:left-[8.8%] timeline"></div>
 
         <div className="mb-6 relative">
           <div className="flex items-center">
@@ -51,10 +70,10 @@ function AddAppointmentList() {
               <div className="text-xs text-[#999a9d] font-primary">MON</div>
             </div>
             <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%]">
-              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10"></div>
+              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 checkpoint-ball"></div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
-              <div className="grid grid-cols-4 gap-4">
+              <div className="flex justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-[13px]/5 text-[#999a9d] mb-1 font-primary">
                     Date
@@ -109,10 +128,10 @@ function AddAppointmentList() {
               <div className="text-xs text-[#999a9d]">THU</div>
             </div>
             <div className="absolute left-[5.5%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center xl:left-[8.1%] 2xl:left-[5.5%] ">
-              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10"></div>
+              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 checkpoint-ball"></div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
-              <div className="grid grid-cols-4 gap-4">
+              <div className="flex justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-[13px]/5 text-[#999a9d] mb-1">Date</div>
                   <div className="font-medium text-[15px]/6 text-basic font-primary">
@@ -165,7 +184,7 @@ function AddAppointmentList() {
               <div className="text-xs text-[#999a9d] font-primary">THU</div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
-              <div className="grid grid-cols-4 gap-4">
+              <div className="flex justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-[13px]/5 text-[#999a9d] mb-1 font-primary">
                     Date
@@ -260,10 +279,10 @@ function AddAppointmentList() {
               <div className="text-xs text-[#999a9d] font-primary">MON</div>
             </div>
             <div className="absolute left-[8.1%] top-[34%] w-3 h-8 bg-[#f7f7f7] flex justify-center items-center 2xl:left-[5.5%] opacity-0">
-              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10"></div>
+              <div className=" w-3 h-3 rounded-full bg-[#00a8b5]  z-10 checkpoint-ball"></div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
-              <div className="grid grid-cols-4 gap-4">
+              <div className="flex justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-[13px]/5 text-[#999a9d] mb-1 font-primary">
                     Date
@@ -318,7 +337,7 @@ function AddAppointmentList() {
               <div className="text-xs text-[#999a9d] font-primary">THU</div>
             </div>
             <div className="flex-1 ml-8 bg-white border border-[#e0e0e0] rounded-lg p-4">
-              <div className="grid grid-cols-4 gap-4">
+              <div className="flex justify-between flex-wrap gap-4">
                 <div>
                   <div className="text-[13px]/5 text-[#999a9d] mb-1 font-primary">
                     Date
@@ -406,7 +425,7 @@ function AddAppointmentList() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

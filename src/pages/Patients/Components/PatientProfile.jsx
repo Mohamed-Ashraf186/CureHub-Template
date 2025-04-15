@@ -26,8 +26,8 @@ import {
 function PatientProfile() {
   return (
     <div className="col-span-2 rounded-lg  ">
-      <div className="flex gap-0.75 h-full">
-        <div className="rounded-left w-1/3 flex flex-col items-center p-6 bg-white">
+      <div className="flex flex-wrap gap-0.75 h-full">
+        <div className="rounded-left w-1/3 flex flex-col items-center p-6 bg-white grow">
           <div className="w-22 h-22 rounded-full overflow-hidden mb-[9px]">
             <img
               src="/sarah-pic.svg"
