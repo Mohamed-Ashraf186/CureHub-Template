@@ -30,7 +30,7 @@ function Header() {
     <HeaderBar className="header justify-between">
       <SearchBar className=" flex gap-2 basis-[44.7%]">
         <div className="search-icon-wrapper flex items-center">
-          <img src="/src/assets/search-icon.svg" alt="Search icon" />
+          <img src="/public/search-icon.svg" alt="Search icon" />
         </div>
         <Input type="text" placeholder="search here..." className="grow " />
       </SearchBar>
