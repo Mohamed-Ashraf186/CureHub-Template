@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Calendar, Edit, ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "../../components/ui/button";
+import { Button } from "../../../components/ui/button";
 import styled from "styled-components";
 
 const MiniCalendarOverlay = styled.div`
@@ -191,13 +191,11 @@ export default function DoctorScheduleCalendar() {
           <Calendar className="h-4 w-4" />
         </Button>
 
-        {/* Mini Calendar Dropdown */}
         {showMiniCalendar && (
           <div
             ref={miniCalendarRef}
             className="absolute top-full left-0 mt-[15pxabsolute top-full] rounded-md shadow-lg z-30 w-fit animate-in fade-in-50 zoom-in-95 duration-100"
           >
-            {/* Redesigned Mini Calendar */}
             <div className="bg-white border  border-[#00a8b5] rounded-sm">
               <div className="flex justify-between items-center px-4 py-2">
                 <ChevronLeft className="h-4 w-4  cursor-pointer" />
@@ -209,7 +207,6 @@ export default function DoctorScheduleCalendar() {
             </div>
 
             <div className="p-4 mt-2 bg-white rounded-sm border  border-[#00a8b5] ">
-              {/* Day abbreviations with more spacing */}
               <div className="grid grid-cols-7 text-center mb-4">
                 {dayAbbreviations.map((day, index) => (
                   <div key={index} className="font-primary text-basic">
@@ -218,7 +215,6 @@ export default function DoctorScheduleCalendar() {
                 ))}
               </div>
 
-              {/* Calendar grid with custom highlighting */}
               <div className="grid gap-2">
                 {calendarData.map((week, weekIndex) => {
                   // For the first row, we need special handling to start highlighting from day 1
@@ -231,7 +227,6 @@ export default function DoctorScheduleCalendar() {
                         key={weekIndex}
                         className="grid grid-cols-7 gap-4 text-center relative"
                       >
-                        {/* This is the teal background that starts at the first day */}
                         <div
                           className="absolute bg-primary rounded-[8px] h-10 z-0"
                           style={{
@@ -322,7 +317,6 @@ export default function DoctorScheduleCalendar() {
       </div>
 
       <div className="border border-[#999a9d] rounded-md overflow-hidden relative">
-        {/* Overlay that appears when mini-calendar is open */}
         {showMiniCalendar && (
           <MiniCalendarOverlay
             className="absolute inset-0 z-10 animate-in fade-in-0 duration-100"
@@ -330,7 +324,6 @@ export default function DoctorScheduleCalendar() {
           />
         )}
 
-        {/* Calendar header - Days of the week */}
         <div
           className="grid grid-cols-7 border-b relative bg-white"
           style={{ borderColor: "#999a9d" }}
@@ -345,16 +338,13 @@ export default function DoctorScheduleCalendar() {
           ))}
         </div>
 
-        {/* Calendar body - Restructured as rows */}
         <div className="relative">
-          {/* Each time slot becomes a row */}
           {timeSlots.map((time, timeIndex) => (
             <div
               key={timeIndex}
               className="grid grid-cols-7 border-b last:border-b-0"
               style={{ borderColor: "#999a9d" }}
             >
-              {/* Each day becomes a cell in the row */}
               {days.map((day, dayIndex) => {
                 const appointment = getAppointment(day, time);
                 return (

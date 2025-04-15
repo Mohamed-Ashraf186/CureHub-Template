@@ -4,6 +4,11 @@ import { useNavigate } from "react-router-dom";
 const SummaryList = styled.div`
   display: flex;
   gap: 1.5em;
+  flex-wrap: wrap;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 const AppointmentSummaryCard = styled.div`
@@ -58,7 +63,7 @@ function StatsSummaryList() {
         </div>
         <p className="text-white">Total Appointments</p>
 
-        <div className="data-wrapper flex justify-between">
+        <div className="data-wrapper flex justify-between flex-wrap mt-auto">
           <div className="value font-medium text-white font-primary">9,200</div>
           <div className="last-week-stats flex gap-1 items-center">
             <p className="text-white font-primary text-xs">Last week</p>
@@ -78,7 +83,7 @@ function StatsSummaryList() {
         </div>
         <p className="text-primary">New Patients</p>
 
-        <div className="data-wrapper flex justify-between">
+        <div className="data-wrapper flex justify-between flex-wrap mt-auto">
           <div className="value font-medium  font-primary">1,200</div>
           <div className="last-week-stats flex gap-1 items-center">
             <p className=" font-primary text-xs">Last week</p>
@@ -98,7 +103,7 @@ function StatsSummaryList() {
         </div>
         <p className="text-primary">Total Doctors</p>
 
-        <div className="data-wrapper flex justify-between">
+        <div className="data-wrapper flex justify-between flex-wrap mt-auto">
           <div className="value font-medium  font-primary">300</div>
           <div className="last-week-stats flex gap-1 items-center">
             <p className=" font-primary text-xs">Last week</p>
@@ -117,7 +122,7 @@ function StatsSummaryList() {
         </div>
         <p className="text-primary">Canceled Appointments</p>
 
-        <div className="data-wrapper flex justify-between">
+        <div className="data-wrapper flex justify-between flex-wrap mt-auto">
           <div className="value font-medium  font-primary">12</div>
           <div className="last-week-stats flex gap-1 items-center">
             <p className=" font-primary text-xs">Last week</p>

@@ -5,9 +5,9 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
-import AppointmentsRequestTable from "./AppointmentsRequestTable";
-import AppointmentsListTable from "./AppointmentsListTable";
-import DoctorScheduleCalendar from "./DoctorScheduleCalendar";
+import AppointmentsRequestTable from "./components/AppointmentsRequestTable";
+import AppointmentsListTable from "./components/AppointmentsListTable";
+import DoctorScheduleCalendar from "./components/DoctorScheduleCalendar";
 import { useLocation } from "react-router-dom";
 
 const SortButton = styled.button`
@@ -30,7 +30,7 @@ function Appointments() {
   return (
     <div className="w-full">
       <Tabs defaultValue={defaultTab} className="w-full flex flex-col gap-2">
-        <div className="flex bg-white p-6 items-center justify-between rounded-[8px]">
+        <div className="flex bg-white p-6 items-center justify-between rounded-[8px] gap-4 flex-wrap">
           <TabsList className="flex gap-[42px] border-b-[#d5d5d5] border-b">
             <TabsTrigger value="appointments-request">
               Appointments Request
