@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const Chart = styled.div`
@@ -17,6 +18,9 @@ const H2 = styled.h2`
 `;
 
 const DropdownButton = styled.button`
+  &.dropp {
+    border: none;
+  }
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--primary);
   border-radius: 0.25rem;
@@ -71,6 +75,7 @@ export default function AppointmentsByGender() {
   const days = ["Sat.", "Sun.", "Mon.", "Tues.", "Wed.", "Thurs.", "Friday"];
   const womenData = [800, 580, 720, 620, 900, 720, 950];
   const menData = [600, 660, 610, 660, 720, 900, 1020];
+  const [showDrop, setShowDrop] = useState(false);
 
   return (
     <Chart className=" border border-gray-200">
@@ -89,13 +94,28 @@ export default function AppointmentsByGender() {
             <span className="text-sm  text-basic font-primary">Men 33%</span>
           </div>
         </div>
-        <div className="flex items-center space-x-6">
-          <DropdownButton className=" text-primary hover:bg-teal-50 flex items-center">
+        <div className="flex items-center space-x-6 relative">
+          <DropdownButton
+            onClick={() => setShowDrop((show) => !show)}
+            className=" text-primary hover:bg-teal-50 flex items-center m-0"
+          >
             Weekly
             <div className="arrow-wrapper">
               <img src="/arrow-teal.svg" alt="down-arrow-teal" />
             </div>
           </DropdownButton>
+
+          {showDrop && (
+            <div className="absolute show bg-white top-8 w-[95.56px] flex flex-col rounded-sm border border-[#00A8B5] z-50">
+              <DropdownButton className="dropp text-primary hover:bg-teal-50 flex items-center w-full">
+                Monthly
+              </DropdownButton>
+
+              <DropdownButton className="dropp text-primary hover:bg-teal-50 flex items-center w-full">
+                Yearly
+              </DropdownButton>
+            </div>
+          )}
         </div>
       </div>
 

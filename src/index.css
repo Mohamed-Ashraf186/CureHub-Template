@@ -231,3 +231,7 @@
 .font-secondary{
   font-family: Roboto;
 }
+
+.hidden {
+  display: none;
+}
