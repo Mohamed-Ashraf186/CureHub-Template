@@ -50,10 +50,10 @@ function Header() {
             <img src="/src/assets/Rectangle 1119.png" alt="profile-pic" />
           </div>
           <div>
-            <p className="text-[#212529] font-[Poppins] font-medium w-[176px]">
+            <p className="text-[#212529] font-primary font-medium w-[176px]">
               Dr. Oliver Widson
             </p>
-            <p className="text-[#999A9D] font-[Poppins] font-medium">Manager</p>
+            <p className="text-[#999A9D] font-primary font-medium">Manager</p>
           </div>
         </div>
 

@@ -57,11 +57,11 @@
 //         <div className="flex items-center gap-[25px]">
 //           <div className="flex items-center gap-1">
 //             <div className="h-4 w-4 rounded-sm bg-[#FFA246]"></div>
-//             <span className="text-sm text-basic font-[poppins]">Women 67%</span>
+//             <span className="text-sm text-basic font-primary">Women 67%</span>
 //           </div>
 //           <div className="flex items-center gap-1">
 //             <ColorKey className="h-4 w-4 rounded-sm "></ColorKey>
-//             <span className="text-sm  text-basic font-[poppins]">Men 33%</span>
+//             <span className="text-sm  text-basic font-primary">Men 33%</span>
 //           </div>
 //         </div>
 //         <div className="flex items-center space-x-6">

@@ -16,25 +16,25 @@ function AppointmentsRequestTable() {
         {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
           <TableRow className="bg-primary rounded-[8px] py-2.5 px-6">
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Patient Name
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Gender
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Department
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Doctor
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Time
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Date
             </TableHead>
-            <TableHead className="font-[poppins] font-medium text-white text-center">
+            <TableHead className="font-primary font-medium text-white text-center">
               Status
             </TableHead>
             {/* <TableHead className="text-right">Amount</TableHead> */}
@@ -43,22 +43,22 @@ function AppointmentsRequestTable() {
         <TableBody>
           {Array.from({ length: 10 }).map((_, index) => (
             <TableRow className="" key={index}>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 Sarah Lawsson
               </TableCell>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 Female
               </TableCell>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 GIT
               </TableCell>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 John Albert
               </TableCell>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 1:00 PM
               </TableCell>
-              <TableCell className="text-sm font-[poppins] text-center py-[20.5px]">
+              <TableCell className="text-sm font-primary text-center py-[20.5px]">
                 Date
               </TableCell>
               <TableCell className="flex gap-7.5 justify-center py-[20.5px]">

@@ -101,6 +101,11 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+
+*{
+  font-family: Roboto;
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -161,10 +166,74 @@
 }
 
 .text-primary{
-  color:#00A8B5;
+  color:#00a8b5;
 }
 
 .bg-primary{
-  background-color: #00A8B5;
+  background-color: #00a8b5;
 }
 
+.font-primary{
+  font-family: "Poppins", sans-serif;
+}
+
+.rounded-left{
+  border-radius: 8px 0 0 8px;
+}
+.rounded-right{
+  border-radius: 0 8px 8px 0;
+}
+
+
+.custom-scrollbar {
+  overflow: auto; /* Ensure overflow is set */
+}
+
+/* WebKit scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 65px; /* Height of the scrollbar for horizontal scrolling */
+  border-radius: 8px; /* Rounded corners for the scrollbar container */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 8px; /* Rounded corners for the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 8px; /* Rounded corners for the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+/* Firefox scrollbar styles */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #212529 #f1f1f1; /* Thumb color and track color */
+}
+
+.bg-custom-green{
+  background: rgba(41, 195, 106, 0.2);
+}
+
+
+.bg-overlay{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-overlay-2{
+  background: rgba(235, 234, 234, 0.8);
+}
+
+
+.translate-up {
+  transform: translateY(-10px);  /* Smooth transition */
+}
+
+.font-secondary{
+  font-family: Roboto;
+}

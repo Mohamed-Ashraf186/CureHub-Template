@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const SummaryList = styled.div`
   display: flex;
@@ -40,9 +41,15 @@ const SummaryCard = styled.div`
 `;
 
 function StatsSummaryList() {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate("/appointments?tab=appointments-list");
+  };
+
   return (
     <SummaryList>
-      <AppointmentSummaryCard>
+      <AppointmentSummaryCard onClick={handleCardClick}>
         <div className="bg-icon">
           <img src="/src/assets/medical-cardio.svg" alt="Cardio icon" />
         </div>
@@ -52,11 +59,9 @@ function StatsSummaryList() {
         <p className="text-white">Total Appointments</p>
 
         <div className="data-wrapper flex justify-between">
-          <div className="value font-medium text-white font-[poppins]">
-            9,200
-          </div>
+          <div className="value font-medium text-white font-primary">9,200</div>
           <div className="last-week-stats flex gap-1 items-center">
-            <p className="text-white font-[poppins] text-xs">Last week</p>
+            <p className="text-white font-primary text-xs">Last week</p>
             <div className="text-[#0FDC67] text-xs flex items-center gap-0.5">
               <p>+ 32%</p>
               <div>
@@ -77,9 +82,9 @@ function StatsSummaryList() {
         <p className="text-primary">New Patients</p>
 
         <div className="data-wrapper flex justify-between">
-          <div className="value font-medium  font-[poppins]">1,200</div>
+          <div className="value font-medium  font-primary">1,200</div>
           <div className="last-week-stats flex gap-1 items-center">
-            <p className=" font-[poppins] text-xs">Last week</p>
+            <p className=" font-primary text-xs">Last week</p>
             <div className="text-[#0FDC67] text-xs flex items-center gap-0.5 font-medium">
               <p>+ 20%</p>
               <div>
@@ -103,9 +108,9 @@ function StatsSummaryList() {
         <p className="text-primary">Total Doctors</p>
 
         <div className="data-wrapper flex justify-between">
-          <div className="value font-medium  font-[poppins]">300</div>
+          <div className="value font-medium  font-primary">300</div>
           <div className="last-week-stats flex gap-1 items-center">
-            <p className=" font-[poppins] text-xs">Last week</p>
+            <p className=" font-primary text-xs">Last week</p>
             <div className="text-[#D20013] text-xs flex items-center gap-0.5 font-medium">
               <p>+ 12%</p>
               <div>
@@ -125,9 +130,9 @@ function StatsSummaryList() {
         <p className="text-primary">Canceled Appointments</p>
 
         <div className="data-wrapper flex justify-between">
-          <div className="value font-medium  font-[poppins]">12</div>
+          <div className="value font-medium  font-primary">12</div>
           <div className="last-week-stats flex gap-1 items-center">
-            <p className=" font-[poppins] text-xs">Last week</p>
+            <p className=" font-primary text-xs">Last week</p>
             <div className="text-[#D20013] text-xs flex items-center font-medium gap-0.5">
               <p>+ 12%</p>
               <div>

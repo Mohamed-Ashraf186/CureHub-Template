@@ -5,7 +5,7 @@ const Chart = styled.div`
   flex-direction: column;
   /* margin-top: 1.5em; */
   width: 100%;
-  max-width: 634px;
+  /* max-width: 634px; */
   background-color: white;
   border-radius: 8px;
   padding: 1.5em 1em 1.5em 1.5em;
@@ -82,11 +82,11 @@ export default function AppointmentsByGender() {
         <div className="flex items-center gap-[25px]">
           <div className="flex items-center gap-1">
             <div className="h-4 w-4 rounded-sm bg-[#FFA246]"></div>
-            <span className="text-sm text-basic font-[poppins]">Women 67%</span>
+            <span className="text-sm text-basic font-primary">Women 67%</span>
           </div>
           <div className="flex items-center gap-1">
             <ColorKey className="h-4 w-4 rounded-sm "></ColorKey>
-            <span className="text-sm  text-basic font-[poppins]">Men 33%</span>
+            <span className="text-sm  text-basic font-primary">Men 33%</span>
           </div>
         </div>
         <div className="flex items-center space-x-6">
@@ -125,7 +125,7 @@ export default function AppointmentsByGender() {
           </YAxis>
 
           <div className="ml-12 h-full flex items-end">
-            <div className="flex-1 flex gap-[48px] justify-end items-end h-[90%]">
+            <div className="flex-1 flex gap-[48px] justify-evenly items-end h-[90%]">
               {days.map((day, index) => (
                 <div
                   key={day}

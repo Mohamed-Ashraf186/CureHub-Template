@@ -8,6 +8,7 @@ import {
 import AppointmentsRequestTable from "./AppointmentsRequestTable";
 import AppointmentsListTable from "./AppointmentsListTable";
 import DoctorScheduleCalendar from "./DoctorScheduleCalendar";
+import { useLocation } from "react-router-dom";
 
 const SortButton = styled.button`
   border: 1px solid #00a8b5;
@@ -22,9 +23,13 @@ const AddButton = styled.button`
 `;
 
 function Appointments() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const defaultTab = queryParams.get("tab") || "appointments-request";
+
   return (
     <div className="w-full">
-      <Tabs defaultValue="account" className="w-full flex flex-col gap-2">
+      <Tabs defaultValue={defaultTab} className="w-full flex flex-col gap-2">
         <div className="flex bg-white p-6 items-center justify-between rounded-[8px]">
           <TabsList className="flex gap-[42px] border-b-[#d5d5d5] border-b">
             <TabsTrigger value="appointments-request">
@@ -38,13 +43,13 @@ function Appointments() {
           </TabsList>
 
           <div className="flex items-center gap-2">
-            <SortButton className="flex gap-2 items-center font-[poppins]">
+            <SortButton className="flex gap-2 items-center font-primary">
               Sort by
               <div className="sort-wrapper">
                 <img src="/src/assets/sort.svg" alt="add-square" />
               </div>
             </SortButton>
-            <AddButton className="flex gap-2 items-center text-white font-[poppins]">
+            <AddButton className="flex gap-2 items-center text-white font-primary">
               <div className="plus-wrapper">
                 <img
                   src="/src/assets/add-square-svgrepo-com 1.svg"

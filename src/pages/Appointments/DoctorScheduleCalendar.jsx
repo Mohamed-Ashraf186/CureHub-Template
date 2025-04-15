@@ -183,7 +183,7 @@ export default function DoctorScheduleCalendar() {
       <div className="flex gap-2 items-center mb-4 relative z-20">
         <Button
           variant="default"
-          className="bg-primary cursor-pointer text-white flex items-center gap-2 font-[poppins]"
+          className="bg-primary cursor-pointer text-white flex items-center gap-2 font-primary"
           onClick={toggleMiniCalendar}
           ref={calendarButtonRef}
         >
@@ -212,7 +212,7 @@ export default function DoctorScheduleCalendar() {
               {/* Day abbreviations with more spacing */}
               <div className="grid grid-cols-7 text-center mb-4">
                 {dayAbbreviations.map((day, index) => (
-                  <div key={index} className="font-[poppins] text-basic">
+                  <div key={index} className="font-primary text-basic">
                     {day}
                   </div>
                 ))}
@@ -314,7 +314,7 @@ export default function DoctorScheduleCalendar() {
 
         <Button
           variant="outline"
-          className="border-gray-300 text-gray-700 flex items-center gap-2 cursor-pointer font-[poppins]"
+          className="border-gray-300 text-gray-700 flex items-center gap-2 cursor-pointer font-primary"
         >
           <Edit className="h-4 w-4" />
           Edit
@@ -338,7 +338,7 @@ export default function DoctorScheduleCalendar() {
           {days.map((day, index) => (
             <div
               key={index}
-              className="py-3 px-4 text-center border-r border-[#999a9d] last:border-r-0 text-primary font-[poppins]"
+              className="py-3 px-4 text-center border-r border-[#999a9d] last:border-r-0 text-primary font-primary"
             >
               {day}
             </div>
@@ -374,20 +374,20 @@ export default function DoctorScheduleCalendar() {
                         </div>
                         <div className="mt-1">
                           <p
-                            className={`text-sm font-[poppins]  ${
+                            className={`text-sm font-primary  ${
                               appointment ? appointment.textColor : "text-black"
                             }`}
                           >
                             {appointment.time}
                           </p>
                           <p
-                            className={`text-sm font-[poppins] font-medium  ${
+                            className={`text-sm font-primary font-medium  ${
                               appointment ? appointment.textColor : "text-black"
                             }`}
                           >
                             {appointment.doctor}{" "}
                             <span
-                              className={`text-sm font-[poppins]  font-medium ${
+                              className={`text-sm font-primary  font-medium ${
                                 appointment
                                   ? appointment.textColor
                                   : "text-black"
